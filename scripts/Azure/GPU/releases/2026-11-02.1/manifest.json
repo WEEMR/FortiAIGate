@@ -1,0 +1,43 @@
+{
+  "edition": "azure-gpu",
+  "files": {
+    "FortiAIGate_Azure_GPU_Lab_Scripts.zip": {
+      "sha256": "708117bb58da906f3bb0ba324e64546a9beea48e9ae69be8d97b409558c518cd",
+      "size": 154957
+    },
+    "README.txt": {
+      "sha256": "60c2b3eb49f71e4871c36fb9ea7534a8c0b8ae54a58ccc82b98eb64330fa54dc",
+      "size": 5001
+    },
+    "SHA256SUMS": {
+      "sha256": "9f6b0882307c5a256e28d1eb48173d14dde0417e7fa51da86a2b23d4c0033922",
+      "size": 784
+    },
+    "create_fortiaigate_gpu_azure.sh": {
+      "sha256": "7ea3c820300051992852e4922099790971066e4e1c1e0faf0733b892306cd516",
+      "size": 53434
+    },
+    "destroy_fortiaigate_gpu_azure.sh": {
+      "sha256": "b23d145d1bb05ca4a3297b6854022ce927b8a2adedc5b07c2d0ca66a98d67c24",
+      "size": 53220
+    },
+    "fortiaigate_gpu_azure_launcher.sh": {
+      "sha256": "c5b2f3d4592ba3b0bec60ccabd88d409007b012f851e5f05d16f095430315b4f",
+      "size": 2097
+    },
+    "required-fortinet-files.txt": {
+      "sha256": "f8a878ed838a791ded3185c96d48f1f72dd903c7277d3575266212d6b136cde0",
+      "size": 873
+    },
+    "user_data/prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    },
+    "user_data/prepare_fortiaigate_gpu_azure.sh": {
+      "sha256": "f9353abfab67182407a0076ab61a055035093c33186a59da9f9b5ab997d73e90",
+      "size": 25367
+    }
+  },
+  "schema_version": 1,
+  "version": "2026-11-02.1"
+}
