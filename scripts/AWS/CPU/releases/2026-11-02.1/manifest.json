@@ -1,0 +1,23 @@
+{
+  "edition": "cpu",
+  "files": {
+    "create_fortiaigate_vpc.sh": {
+      "sha256": "2f5775e3c5826627fb2d5d09290639b7732d35ada633673e3c6fd35cfb90f19a",
+      "size": 48384
+    },
+    "destroy_fortiaigate_vpc.sh": {
+      "sha256": "f9cdaac4a578ba544cdec9839a4c1a72443373e0a2bb19074ee734831780d186",
+      "size": 46156
+    },
+    "fortiaigate_launcher.sh": {
+      "sha256": "746007e1a9947786dd254f9fae3aa241a1d1c67bd436b1804e2fd9940ca1f383",
+      "size": 7118
+    },
+    "user_data/prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    }
+  },
+  "schema_version": 1,
+  "version": "2026-11-02.1"
+}
