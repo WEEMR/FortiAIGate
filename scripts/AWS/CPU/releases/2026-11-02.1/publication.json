@@ -1,0 +1,35 @@
+{
+  "files": {
+    "_stable/scripts/AWS/CPU/FortiAIGate_CPU_AWS_Launcher.sh": {
+      "sha256": "59468a7e001d2664a23503bc5cacb35743f12ad5042e6e4cbe985d161e9d2837",
+      "size": 7075
+    },
+    "create_fortiaigate_vpc.sh": {
+      "sha256": "2f5775e3c5826627fb2d5d09290639b7732d35ada633673e3c6fd35cfb90f19a",
+      "size": 48384
+    },
+    "destroy_fortiaigate_vpc.sh": {
+      "sha256": "f9cdaac4a578ba544cdec9839a4c1a72443373e0a2bb19074ee734831780d186",
+      "size": 46156
+    },
+    "fortiaigate_launcher.sh": {
+      "sha256": "746007e1a9947786dd254f9fae3aa241a1d1c67bd436b1804e2fd9940ca1f383",
+      "size": 7118
+    },
+    "manifest.json": {
+      "sha256": "7a21d8459a53b730b63c07dde858cd34230edb106d1c1f51b228fe193a83b091",
+      "size": 685
+    },
+    "user_data/prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    }
+  },
+  "repository": "WEEMR/FortiAIGate",
+  "schema_version": 1,
+  "stable_files": {
+    "scripts/AWS/CPU/FortiAIGate_CPU_AWS_Launcher.sh": "_stable/scripts/AWS/CPU/FortiAIGate_CPU_AWS_Launcher.sh"
+  },
+  "tag": "cpu-2026-11-02.1",
+  "version": "2026-11-02.1"
+}
