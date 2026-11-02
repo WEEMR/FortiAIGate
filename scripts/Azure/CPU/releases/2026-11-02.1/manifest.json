@@ -1,0 +1,31 @@
+{
+  "edition": "azure-cpu",
+  "files": {
+    "FortiAIGate_Azure_CloudShell_Scripts.zip": {
+      "sha256": "b5c71681a8e77c3e26b4fbdf4d4b67feab0c21344303a54c2169da76bf1c37ad",
+      "size": 28799
+    },
+    "README.txt": {
+      "sha256": "03cf8614339f0a7ac4aa5a36a14371dcf71f8f8f736ec8579dc7934fabbc33f4",
+      "size": 7244
+    },
+    "SHA256SUMS": {
+      "sha256": "21a8ebb01ad39874c273cb4880bc2a482a77723159a5175ebcbcb7d5ffb57d2e",
+      "size": 469
+    },
+    "create_fortiaigate_azure.sh": {
+      "sha256": "7a50513566aeaab5f9ab281297cf6ab40719a297adbaf3e79d54f72bb14d9329",
+      "size": 44884
+    },
+    "destroy_fortiaigate_azure.sh": {
+      "sha256": "9ef2f39dee9bd0631848f6209578bc35a8c45b1a1651202984da8a3509dcb1f3",
+      "size": 31299
+    },
+    "fortiaigate_azure_launcher.sh": {
+      "sha256": "97bfb04a37af27fa4fc782395ddcfe6b6def5bfb5b9cf1dfbb51723128e733a3",
+      "size": 2941
+    }
+  },
+  "schema_version": 1,
+  "version": "2026-11-02.1"
+}
