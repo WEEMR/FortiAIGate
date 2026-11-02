@@ -4,6 +4,8 @@ Approved launchers, versioned runtime scripts, Ubuntu preparation helpers and Te
 
 Choose your environment in the guide, then use its current launcher or download. The approved branch provides stable entry points; immutable release tags retain the exact tested payloads and their integrity records. Product images, installers and licenses remain in their separate artifact stores.
 
+Legacy S3 scripts/ and user_data/ download URLs were retired on 2026-11-02. Use the current guide commands and GitHub downloads; older frozen instructions may mention retired URLs. S3 continues to host the separate product installer/image files.
+
 | Download family | Purpose | Approved version | Guide |
 | --- | --- | --- | --- |
 | [AWS CPU](scripts/AWS/CPU/README.md) | AWS CPU lab deployment and reviewed cleanup. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
