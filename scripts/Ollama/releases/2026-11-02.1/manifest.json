@@ -1,0 +1,63 @@
+{
+  "edition": "ollama",
+  "files": {
+    "Ollama_AWS_Lab_Scripts.zip": {
+      "sha256": "2360b39086f315041e1847e4a35974db3b8422c64ee2e28c34befb633b1b64c7",
+      "size": 105062
+    },
+    "README-aws.txt": {
+      "sha256": "5c9640472e640e590e225d87e0d1dfb15472309fc1eed7fb46cfd462a5a8bd04",
+      "size": 22585
+    },
+    "README-runtime.txt": {
+      "sha256": "8506f8007b2f004eb5050623c1e77108ea216a1311be6c57e144934cdd22202e",
+      "size": 12325
+    },
+    "SHA256SUMS": {
+      "sha256": "14681c4321fd9e04bfc1f8e6a2f67a4b2c60c9567b6f9d63afe39c8eaa38d71e",
+      "size": 1228
+    },
+    "compatibility/SHA256SUMS": {
+      "sha256": "401c770fb32bfd6337bd1a99f2a4a4eedcf127037ffad8367b0652363dca52bd",
+      "size": 962
+    },
+    "legacy/SHA256SUMS": {
+      "sha256": "b8920da2fa8cf9e2a7f1cdb7dcaec184ef7f69e0c1cf92655cc9fe275602ee67",
+      "size": 869
+    },
+    "legacy/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "ollama_aws_launcher.sh": {
+      "sha256": "80c7b8e8fd3fd9d284fc138665cb1d8c2b6235612ac0f51266af5e2ea24c87c5",
+      "size": 95258
+    },
+    "prepare_ollama.sh": {
+      "sha256": "3623fafd5bb1822fb096008fc2f4a5a04c2521f10506e9ee4c2610366a42ab19",
+      "size": 41284
+    },
+    "releases/2026-11-01.2/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "releases/2026-11-01.3/prepare_ollama.sh": {
+      "sha256": "fc8c731e50f6a16e79fc0eef5a2b53676e0de41bac0c1208e3e8f8714ed514ea",
+      "size": 28876
+    },
+    "releases/2026-11-01.4/prepare_ollama.sh": {
+      "sha256": "01c72510749c25e7a93c819fc4c2e9f9399e3ade37088ab215e02bce9973863f",
+      "size": 35053
+    },
+    "releases/2026-11-01.5/prepare_ollama.sh": {
+      "sha256": "d1ef41787c3bee10c8823bd0b198dbef7c113cdee1bac70b8546efc597607f71",
+      "size": 37255
+    },
+    "releases/2026-11-02.1/prepare_ollama.sh": {
+      "sha256": "3623fafd5bb1822fb096008fc2f4a5a04c2521f10506e9ee4c2610366a42ab19",
+      "size": 41284
+    }
+  },
+  "schema_version": 1,
+  "version": "2026-11-02.1"
+}
