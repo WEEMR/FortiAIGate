@@ -1,0 +1,27 @@
+{
+  "edition": "home",
+  "files": {
+    "README.txt": {
+      "sha256": "7b0b8f1c425eca10660d0228868f23f0a630b415e048c27facd14b53a20b6760",
+      "size": 7250
+    },
+    "prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    },
+    "required-cpu-files.txt": {
+      "sha256": "14580f0e920f50c8ba78d85ee155c286923e9ff735a075a16a973c50b72a82f5",
+      "size": 558
+    },
+    "start_fortiaigate_install.sh": {
+      "sha256": "92c18bf31c880034cd25085ce9abf0bbe0d8536221252d6128993f0e6d2cc3ae",
+      "size": 1621
+    },
+    "wait_fortiaigate_install.sh": {
+      "sha256": "3b9b166b370ab476f7fd7ee44e9e61773a2bf50bff3ea1e8b74be64417d89308",
+      "size": 2903
+    }
+  },
+  "schema_version": 1,
+  "version": "2026-11-02.1"
+}

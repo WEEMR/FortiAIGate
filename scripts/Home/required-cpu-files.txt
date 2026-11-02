@@ -1,0 +1,15 @@
+FortiAIGate 8.0.2 build0055 - Docker CPU release
+
+Images/ (seven image archives):
+FAIG_api-V8.0.2-build0055-FORTINET.tar
+FAIG_webui-V8.0.2-build0055-FORTINET.tar
+FAIG_llm-gateway-V8.0.2-build0055-FORTINET.tar
+FAIG_logd-V8.0.2-build0055-FORTINET.tar
+FAIG_license_manager-V8.0.2-build0055-FORTINET.tar
+FAIG_guardrail-V8.0.2-build0055-FORTINET.tar
+FAIG_guardrail-scanner-V8.0.2-build0055-FORTINET.tar
+
+Installer/:
+FAIG_deploy-docker-compose-cli-V8.0.2-build0055-FORTINET.tar.gz
+
+The image importer also accepts .tar.gz variants. Keep one variant per component.
