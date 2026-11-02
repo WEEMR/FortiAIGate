@@ -1,0 +1,47 @@
+{
+  "files": {
+    "FortiAIGate_Azure_RTX_Lab_Scripts.zip": {
+      "sha256": "338dbe1dbc5d3824dcd369b37756a5d7c3d9f27cb7d5a9a8846b0532fd49816c",
+      "size": 178210
+    },
+    "SHA256SUMS": {
+      "sha256": "fcf835ebbfadf4538628e920fce80b94654cfa882b6d0f35d097e00c959d1a7b",
+      "size": 617
+    },
+    "_stable/scripts/Azure/RTX/fortiaigate_gpu_azure_launcher.sh": {
+      "sha256": "0ea1cfc07b4948f24e2bee7a51f2c477e43ea5c375863e2ce7e624d1e061dca5",
+      "size": 2653
+    },
+    "create_fortiaigate_gpu_azure.sh": {
+      "sha256": "e862f2b6ed89f5c75fd8fd8f9e4d72d0785a7570a5b5a11f168153475442b20b",
+      "size": 64308
+    },
+    "destroy_fortiaigate_gpu_azure.sh": {
+      "sha256": "3b21b0e8e7b392235bc666e0761af0a1486bde58e095592c57054107e2c171de",
+      "size": 63956
+    },
+    "fortiaigate_gpu_azure_launcher.sh": {
+      "sha256": "0ea1cfc07b4948f24e2bee7a51f2c477e43ea5c375863e2ce7e624d1e061dca5",
+      "size": 2653
+    },
+    "manifest.json": {
+      "sha256": "932d01ccaf5d4210e8a152c760627c9b67964d8cd139fc2b9333072ff9034ce7",
+      "size": 1168
+    },
+    "user_data/prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    },
+    "user_data/prepare_fortiaigate_gpu_azure_rtx.sh": {
+      "sha256": "fc2d0bb76795b2282e4e326391e9db534997bc1a67fcd37ad3c63185772e8f43",
+      "size": 32546
+    }
+  },
+  "repository": "WEEMR/FortiAIGate",
+  "schema_version": 1,
+  "stable_files": {
+    "scripts/Azure/RTX/fortiaigate_gpu_azure_launcher.sh": "_stable/scripts/Azure/RTX/fortiaigate_gpu_azure_launcher.sh"
+  },
+  "tag": "azure-rtx-2026-11-02.1",
+  "version": "2026-11-02.1"
+}
