@@ -4,7 +4,7 @@ Public deployment entry points and their retained runtime snapshots. Select your
 
 | Download family | Purpose | Approved version | Guide |
 | --- | --- | --- | --- |
-| [AWS CPU](AWS/CPU/README.md) | AWS CPU lab deployment and reviewed cleanup. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
+| [AWS CPU](AWS/CPU/README.md) | AWS CPU lab deployment and reviewed cleanup. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 | [AWS L40S GPU](AWS/GPU/README.md) | AWS L40S GPU deployment, capacity fallback and managed cleanup. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Azure CPU](Azure/CPU/README.md) | Azure CPU deployment and interactive access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 | [Azure H100 GPU](Azure/GPU/README.md) | Azure H100 GPU deployment and access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |

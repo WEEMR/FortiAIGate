@@ -8,7 +8,7 @@ Legacy S3 scripts/ and user_data/ download URLs were retired on 2026-11-02. Use 
 
 | Download family | Purpose | Approved version | Guide |
 | --- | --- | --- | --- |
-| [AWS CPU](scripts/AWS/CPU/README.md) | AWS CPU lab deployment and reviewed cleanup. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
+| [AWS CPU](scripts/AWS/CPU/README.md) | AWS CPU lab deployment and reviewed cleanup. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 | [AWS L40S GPU](scripts/AWS/GPU/README.md) | AWS L40S GPU deployment, capacity fallback and managed cleanup. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Azure CPU](scripts/Azure/CPU/README.md) | Azure CPU deployment and interactive access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 | [Azure H100 GPU](scripts/Azure/GPU/README.md) | Azure H100 GPU deployment and access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
