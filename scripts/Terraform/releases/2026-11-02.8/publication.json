@@ -1,0 +1,437 @@
+{
+  "files": {
+    ".terraform.lock.hcl": {
+      "sha256": "2599e473dcdb8f44adb96b314789edf53622e6630efe3c0362f7b9c393d41510",
+      "size": 2628
+    },
+    "FortiAIGate_MultiCloud_Terraform.zip": {
+      "sha256": "2191902a7c11032968ee5abb0843c04a404fffed33287373a07eedd78ebfab36",
+      "size": 92483
+    },
+    "FortiAIGate_Terraform/.gitignore": {
+      "sha256": "b37b5f530867a9cb9069ae38b265d611e07694ef39dd4ad203774d673b8f78b8",
+      "size": 123
+    },
+    "FortiAIGate_Terraform/.terraform.lock.hcl": {
+      "sha256": "99fbef9f509e5eddb2a9da5f2e00d40b6a8c0cf72babfb38324ef88eedeec991",
+      "size": 3701
+    },
+    "FortiAIGate_Terraform/AWS/AWS_FortiAIGate_CPU.tf": {
+      "sha256": "ff449796b238284e879eb9d83f9f3cc0689e5897b1556f93442873e58d6e963a",
+      "size": 3955
+    },
+    "FortiAIGate_Terraform/AWS/AWS_FortiAIGate_GPU.tf": {
+      "sha256": "7c59de003c5a97b1149f229c73dfd78aed0a8aa3930bf24a1b77f7bbb1a9cf57",
+      "size": 4651
+    },
+    "FortiAIGate_Terraform/AWS/AWS_Ollama.tf": {
+      "sha256": "e94335279432ab2e5932ea22cabcc72aa787ed548cd7292eed00f1d294e7f328",
+      "size": 5562
+    },
+    "FortiAIGate_Terraform/AWS/AWS_Public_IPs.tf": {
+      "sha256": "2aa04f885889832c9d89b77ace3cab1c7ce3377eb7758edc82317af35a8c2747",
+      "size": 997
+    },
+    "FortiAIGate_Terraform/AWS/AWS_VPC.tf": {
+      "sha256": "9d8e0cd968fa2cf04f811ffe16c4762f591aff3cc98807d3f05d1bf39a732f5f",
+      "size": 2820
+    },
+    "FortiAIGate_Terraform/AWS/Extend_GPU.py": {
+      "sha256": "5f2a8a62ff1c94dbd9001a9ec2055813fe2fe3f724afe867e00e7bf9624394e5",
+      "size": 7861
+    },
+    "FortiAIGate_Terraform/AWS/FortiAIGate_GPU_CloudFormation.json": {
+      "sha256": "f1e111ad33e47826d99d3d2b5d4a7a978a0305d1d3a8c93fb8e878f607e70e6d",
+      "size": 50719
+    },
+    "FortiAIGate_Terraform/AWS/FortiAIGate_GPU_FinalCleanup.json": {
+      "sha256": "04966e09864baf94cff2330c236472271a92083e56430de94e9ed311664ceae2",
+      "size": 9431
+    },
+    "FortiAIGate_Terraform/AWS/Resume_GPU.py": {
+      "sha256": "c1f572b637f1f59d258fa6b78828c60147a1911c9a3a05c2209b5e98fc4360d2",
+      "size": 6576
+    },
+    "FortiAIGate_Terraform/AWS/output.tf": {
+      "sha256": "5471275b7bfef0e09738cce159506d1c6a97cc1a3712e3a86181b96e4f62257d",
+      "size": 5756
+    },
+    "FortiAIGate_Terraform/AWS/provider.tf": {
+      "sha256": "57441c4e1d88416af7de4707286d26feac5aa51c084fcfc7accb5fca51090555",
+      "size": 90
+    },
+    "FortiAIGate_Terraform/AWS/variables.tf": {
+      "sha256": "843c74e46ae2855fd2975f91b302fcf437bef1c777d4de5497e498f36b0462dd",
+      "size": 1345
+    },
+    "FortiAIGate_Terraform/Azure/Azure_FortiAIGate_CPU.tf": {
+      "sha256": "16c4a30408a2baa82de2065ae708728fd811e994b01af6491ff6826a9708ffe0",
+      "size": 3481
+    },
+    "FortiAIGate_Terraform/Azure/Azure_Networking.tf": {
+      "sha256": "44d4c77cef3731334a3728d864f7f2517d4ad1e5dfed5c872bffcd9507994c5c",
+      "size": 5483
+    },
+    "FortiAIGate_Terraform/Azure/Azure_Ollama.tf": {
+      "sha256": "1488f84b07477b53b57caf3282ad851002e2f3f46ce208926bfd63110d33a373",
+      "size": 3592
+    },
+    "FortiAIGate_Terraform/Azure/Azure_Public_IPs.tf": {
+      "sha256": "16141c67c62315415879ebcf9b2bdb8533924ea9c1aa329f4e530c4c592f2c3a",
+      "size": 991
+    },
+    "FortiAIGate_Terraform/Azure/output.tf": {
+      "sha256": "8941b49d5519b117ab67dfa998986280689d01a090a758e42a7bb2c71be884d6",
+      "size": 3255
+    },
+    "FortiAIGate_Terraform/Azure/provider.tf": {
+      "sha256": "9a4ddf396bdd84087090d4bfedd6c275b8926f55b9e75e2a2f356312825933e3",
+      "size": 90
+    },
+    "FortiAIGate_Terraform/Azure/variables.tf": {
+      "sha256": "321a22dc5869eba8fee44f2f52c16e825579cbcb639fa60522214916e2881652",
+      "size": 2705
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Bootstrap.tf": {
+      "sha256": "ed2a93a9095c41511f690ddc6bfdcc88c4c0ef771faba2037b64713dc49f0bb5",
+      "size": 3578
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Check_Changes.sh": {
+      "sha256": "89b89ccea26aaa65e55719d1a16f87473e8fcd3d69faca3d4bf87e40e383bab5",
+      "size": 1835
+    },
+    "FortiAIGate_Terraform/Shared_Resources/FortiAIGate_Bootstrap.sh.tftpl": {
+      "sha256": "bb6dfc45ef87d5926152455fe554c1272da63c086314a34f54323224d9c869c4",
+      "size": 2946
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate.py": {
+      "sha256": "2807d787df64df74303a1a341c9c788c755117f2c329504c21a120f1c0291e66",
+      "size": 9123
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate_Guest.py": {
+      "sha256": "edcd4c20e34f31dc21ecc71976a8df4587a926b4f1ea13771aee35f05058e8d0",
+      "size": 20987
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Installation_Progress.tf": {
+      "sha256": "5f3168b5678fa8e46f5cba52f8c974e3eff360adb2ad6c39e5a771794cc37b4c",
+      "size": 3131
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Management_Access.tf": {
+      "sha256": "78ef9b567e867a62f74c8b597359307967eef5d5dc6ffcb45bbfec247e4ebc7d",
+      "size": 1248
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Ollama_Bootstrap.sh.tftpl": {
+      "sha256": "e7dcb37e775b0a9c9c617a12be020bd201bc4ae3aa95edefb47789d7284cf1fa",
+      "size": 3426
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Prepare_Gateway_Certificate.py": {
+      "sha256": "a8de73b1c569b03285304a24621e8eed2f34c16e4abc19a0b12edbb9f0a179d4",
+      "size": 10249
+    },
+    "FortiAIGate_Terraform/Shared_Resources/README.md": {
+      "sha256": "9e711ae0134fb6be326d447d281c10fc0a45fe16c8ffa5193a7eea4c32294b7d",
+      "size": 23332
+    },
+    "FortiAIGate_Terraform/Shared_Resources/User_Input.auto.tfvars.example": {
+      "sha256": "95af225317cc7e1089ed77e447dd9c6174ae278b3a5e97361a2d272497a43ef9",
+      "size": 1425
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Wait_For_Preparation.sh": {
+      "sha256": "70b548bb2ecb5103bbe9279fbb1f3c4351928a9665e20e17c6e091726d18dbef",
+      "size": 1364
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Watch_Capacity.py": {
+      "sha256": "45a0f303602dfbf1cc5fdf08a9d0a75e3c2e9715463ccedcabc05633c7d8f3a2",
+      "size": 16469
+    },
+    "FortiAIGate_Terraform/Shared_Resources/Watch_Installation.py": {
+      "sha256": "edb97bbbb5dea788a04a6df5d3626787da3eef10075366c3288d8fe56def7c89",
+      "size": 17375
+    },
+    "FortiAIGate_Terraform/Shared_Resources/main.tf": {
+      "sha256": "692f6537c6d40fd381ce99acc99fe2cfd0b5af80e6ce9cc90d4ed7542bb446ac",
+      "size": 2322
+    },
+    "FortiAIGate_Terraform/Shared_Resources/output.tf": {
+      "sha256": "296d84b8910258a8f2996ad6ea026de087f95f6708f975a6c2e3c2b8af3a1679",
+      "size": 4938
+    },
+    "FortiAIGate_Terraform/Shared_Resources/provider.tf": {
+      "sha256": "fdb510ffc9ecb0ebe7bc753e2e58faf272c88af48e87fe7a71cf0ed752fa259e",
+      "size": 1508
+    },
+    "FortiAIGate_Terraform/Shared_Resources/variables.tf": {
+      "sha256": "f79336257e7b316bffad358f29c02cfc52b7200b280f200545678642241ef5c3",
+      "size": 8855
+    },
+    "FortiAIGate_Terraform/User_Input.auto.tfvars": {
+      "sha256": "95af225317cc7e1089ed77e447dd9c6174ae278b3a5e97361a2d272497a43ef9",
+      "size": 1425
+    },
+    "FortiAIGate_Terraform/main.tf": {
+      "sha256": "f39494a45680d9356cf77a3d15fb9eb4983126383be6c754ab3f95284308bee9",
+      "size": 2504
+    },
+    "FortiAIGate_Terraform/variables.tf": {
+      "sha256": "f79336257e7b316bffad358f29c02cfc52b7200b280f200545678642241ef5c3",
+      "size": 8855
+    },
+    "README.txt": {
+      "sha256": "581cf235bc99d7efbdf75290c0e5beecf0263ad53ba27d5ea705b7eb371fd8ec",
+      "size": 3514
+    },
+    "SHA256SUMS": {
+      "sha256": "568ae0d2e8c4a85a872fc874f8a3c172dba6284ff41cfcc671c87f1ed25ec66f",
+      "size": 5209
+    },
+    "_stable/scripts/Terraform/.terraform.lock.hcl": {
+      "sha256": "2599e473dcdb8f44adb96b314789edf53622e6630efe3c0362f7b9c393d41510",
+      "size": 2628
+    },
+    "_stable/scripts/Terraform/FortiAIGate_MultiCloud_Terraform.zip": {
+      "sha256": "2191902a7c11032968ee5abb0843c04a404fffed33287373a07eedd78ebfab36",
+      "size": 92483
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/.gitignore": {
+      "sha256": "b37b5f530867a9cb9069ae38b265d611e07694ef39dd4ad203774d673b8f78b8",
+      "size": 123
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/.terraform.lock.hcl": {
+      "sha256": "99fbef9f509e5eddb2a9da5f2e00d40b6a8c0cf72babfb38324ef88eedeec991",
+      "size": 3701
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_CPU.tf": {
+      "sha256": "ff449796b238284e879eb9d83f9f3cc0689e5897b1556f93442873e58d6e963a",
+      "size": 3955
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_GPU.tf": {
+      "sha256": "7c59de003c5a97b1149f229c73dfd78aed0a8aa3930bf24a1b77f7bbb1a9cf57",
+      "size": 4651
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Ollama.tf": {
+      "sha256": "e94335279432ab2e5932ea22cabcc72aa787ed548cd7292eed00f1d294e7f328",
+      "size": 5562
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Public_IPs.tf": {
+      "sha256": "2aa04f885889832c9d89b77ace3cab1c7ce3377eb7758edc82317af35a8c2747",
+      "size": 997
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_VPC.tf": {
+      "sha256": "9d8e0cd968fa2cf04f811ffe16c4762f591aff3cc98807d3f05d1bf39a732f5f",
+      "size": 2820
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/Extend_GPU.py": {
+      "sha256": "5f2a8a62ff1c94dbd9001a9ec2055813fe2fe3f724afe867e00e7bf9624394e5",
+      "size": 7861
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_CloudFormation.json": {
+      "sha256": "f1e111ad33e47826d99d3d2b5d4a7a978a0305d1d3a8c93fb8e878f607e70e6d",
+      "size": 50719
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_FinalCleanup.json": {
+      "sha256": "04966e09864baf94cff2330c236472271a92083e56430de94e9ed311664ceae2",
+      "size": 9431
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/Resume_GPU.py": {
+      "sha256": "c1f572b637f1f59d258fa6b78828c60147a1911c9a3a05c2209b5e98fc4360d2",
+      "size": 6576
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/output.tf": {
+      "sha256": "5471275b7bfef0e09738cce159506d1c6a97cc1a3712e3a86181b96e4f62257d",
+      "size": 5756
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/provider.tf": {
+      "sha256": "57441c4e1d88416af7de4707286d26feac5aa51c084fcfc7accb5fca51090555",
+      "size": 90
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/variables.tf": {
+      "sha256": "843c74e46ae2855fd2975f91b302fcf437bef1c777d4de5497e498f36b0462dd",
+      "size": 1345
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_FortiAIGate_CPU.tf": {
+      "sha256": "16c4a30408a2baa82de2065ae708728fd811e994b01af6491ff6826a9708ffe0",
+      "size": 3481
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Networking.tf": {
+      "sha256": "44d4c77cef3731334a3728d864f7f2517d4ad1e5dfed5c872bffcd9507994c5c",
+      "size": 5483
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Ollama.tf": {
+      "sha256": "1488f84b07477b53b57caf3282ad851002e2f3f46ce208926bfd63110d33a373",
+      "size": 3592
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Public_IPs.tf": {
+      "sha256": "16141c67c62315415879ebcf9b2bdb8533924ea9c1aa329f4e530c4c592f2c3a",
+      "size": 991
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/output.tf": {
+      "sha256": "8941b49d5519b117ab67dfa998986280689d01a090a758e42a7bb2c71be884d6",
+      "size": 3255
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/provider.tf": {
+      "sha256": "9a4ddf396bdd84087090d4bfedd6c275b8926f55b9e75e2a2f356312825933e3",
+      "size": 90
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/variables.tf": {
+      "sha256": "321a22dc5869eba8fee44f2f52c16e825579cbcb639fa60522214916e2881652",
+      "size": 2705
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Bootstrap.tf": {
+      "sha256": "ed2a93a9095c41511f690ddc6bfdcc88c4c0ef771faba2037b64713dc49f0bb5",
+      "size": 3578
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Check_Changes.sh": {
+      "sha256": "89b89ccea26aaa65e55719d1a16f87473e8fcd3d69faca3d4bf87e40e383bab5",
+      "size": 1835
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/FortiAIGate_Bootstrap.sh.tftpl": {
+      "sha256": "bb6dfc45ef87d5926152455fe554c1272da63c086314a34f54323224d9c869c4",
+      "size": 2946
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate.py": {
+      "sha256": "2807d787df64df74303a1a341c9c788c755117f2c329504c21a120f1c0291e66",
+      "size": 9123
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate_Guest.py": {
+      "sha256": "edcd4c20e34f31dc21ecc71976a8df4587a926b4f1ea13771aee35f05058e8d0",
+      "size": 20987
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Installation_Progress.tf": {
+      "sha256": "5f3168b5678fa8e46f5cba52f8c974e3eff360adb2ad6c39e5a771794cc37b4c",
+      "size": 3131
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Management_Access.tf": {
+      "sha256": "78ef9b567e867a62f74c8b597359307967eef5d5dc6ffcb45bbfec247e4ebc7d",
+      "size": 1248
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Ollama_Bootstrap.sh.tftpl": {
+      "sha256": "e7dcb37e775b0a9c9c617a12be020bd201bc4ae3aa95edefb47789d7284cf1fa",
+      "size": 3426
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Prepare_Gateway_Certificate.py": {
+      "sha256": "a8de73b1c569b03285304a24621e8eed2f34c16e4abc19a0b12edbb9f0a179d4",
+      "size": 10249
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/README.md": {
+      "sha256": "9e711ae0134fb6be326d447d281c10fc0a45fe16c8ffa5193a7eea4c32294b7d",
+      "size": 23332
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/User_Input.auto.tfvars.example": {
+      "sha256": "95af225317cc7e1089ed77e447dd9c6174ae278b3a5e97361a2d272497a43ef9",
+      "size": 1425
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Wait_For_Preparation.sh": {
+      "sha256": "70b548bb2ecb5103bbe9279fbb1f3c4351928a9665e20e17c6e091726d18dbef",
+      "size": 1364
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Capacity.py": {
+      "sha256": "45a0f303602dfbf1cc5fdf08a9d0a75e3c2e9715463ccedcabc05633c7d8f3a2",
+      "size": 16469
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Installation.py": {
+      "sha256": "edb97bbbb5dea788a04a6df5d3626787da3eef10075366c3288d8fe56def7c89",
+      "size": 17375
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/main.tf": {
+      "sha256": "692f6537c6d40fd381ce99acc99fe2cfd0b5af80e6ce9cc90d4ed7542bb446ac",
+      "size": 2322
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/output.tf": {
+      "sha256": "296d84b8910258a8f2996ad6ea026de087f95f6708f975a6c2e3c2b8af3a1679",
+      "size": 4938
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/provider.tf": {
+      "sha256": "fdb510ffc9ecb0ebe7bc753e2e58faf272c88af48e87fe7a71cf0ed752fa259e",
+      "size": 1508
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/variables.tf": {
+      "sha256": "f79336257e7b316bffad358f29c02cfc52b7200b280f200545678642241ef5c3",
+      "size": 8855
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/User_Input.auto.tfvars": {
+      "sha256": "95af225317cc7e1089ed77e447dd9c6174ae278b3a5e97361a2d272497a43ef9",
+      "size": 1425
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/main.tf": {
+      "sha256": "f39494a45680d9356cf77a3d15fb9eb4983126383be6c754ab3f95284308bee9",
+      "size": 2504
+    },
+    "_stable/scripts/Terraform/FortiAIGate_Terraform/variables.tf": {
+      "sha256": "f79336257e7b316bffad358f29c02cfc52b7200b280f200545678642241ef5c3",
+      "size": 8855
+    },
+    "_stable/scripts/Terraform/README.txt": {
+      "sha256": "581cf235bc99d7efbdf75290c0e5beecf0263ad53ba27d5ea705b7eb371fd8ec",
+      "size": 3514
+    },
+    "_stable/scripts/Terraform/SHA256SUMS": {
+      "sha256": "568ae0d2e8c4a85a872fc874f8a3c172dba6284ff41cfcc671c87f1ed25ec66f",
+      "size": 5209
+    },
+    "_stable/scripts/Terraform/main.tf": {
+      "sha256": "18546ece1ccd93c4d19f420a1a1bb73035470c7e5b1272c3ec8b3146fba0f69a",
+      "size": 25357
+    },
+    "main.tf": {
+      "sha256": "18546ece1ccd93c4d19f420a1a1bb73035470c7e5b1272c3ec8b3146fba0f69a",
+      "size": 25357
+    },
+    "manifest.json": {
+      "sha256": "d6e335289656f8c22f7b24c04624d0e87d9560e07e2cdd401c3a94f2c04a62fb",
+      "size": 7876
+    }
+  },
+  "repository": "WEEMR/FortiAIGate",
+  "schema_version": 1,
+  "stable_files": {
+    "scripts/Terraform/.terraform.lock.hcl": "_stable/scripts/Terraform/.terraform.lock.hcl",
+    "scripts/Terraform/FortiAIGate_MultiCloud_Terraform.zip": "_stable/scripts/Terraform/FortiAIGate_MultiCloud_Terraform.zip",
+    "scripts/Terraform/FortiAIGate_Terraform/.gitignore": "_stable/scripts/Terraform/FortiAIGate_Terraform/.gitignore",
+    "scripts/Terraform/FortiAIGate_Terraform/.terraform.lock.hcl": "_stable/scripts/Terraform/FortiAIGate_Terraform/.terraform.lock.hcl",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_CPU.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_CPU.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_GPU.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_FortiAIGate_GPU.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Ollama.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Ollama.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Public_IPs.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_Public_IPs.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_VPC.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/AWS_VPC.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/Extend_GPU.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/Extend_GPU.py",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_CloudFormation.json": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_CloudFormation.json",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_FinalCleanup.json": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/FortiAIGate_GPU_FinalCleanup.json",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/Resume_GPU.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/Resume_GPU.py",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/output.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/output.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/provider.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/provider.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/AWS/variables.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/AWS/variables.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_FortiAIGate_CPU.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_FortiAIGate_CPU.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Networking.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Networking.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Ollama.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Ollama.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Public_IPs.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/Azure_Public_IPs.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/output.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/output.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/provider.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/provider.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Azure/variables.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Azure/variables.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Bootstrap.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Bootstrap.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Check_Changes.sh": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Check_Changes.sh",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/FortiAIGate_Bootstrap.sh.tftpl": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/FortiAIGate_Bootstrap.sh.tftpl",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate.py",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate_Guest.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Install_FortiAIGate_Guest.py",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Installation_Progress.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Installation_Progress.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Management_Access.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Management_Access.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Ollama_Bootstrap.sh.tftpl": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Ollama_Bootstrap.sh.tftpl",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Prepare_Gateway_Certificate.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Prepare_Gateway_Certificate.py",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/README.md": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/README.md",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/User_Input.auto.tfvars.example": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/User_Input.auto.tfvars.example",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Wait_For_Preparation.sh": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Wait_For_Preparation.sh",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Capacity.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Capacity.py",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Installation.py": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/Watch_Installation.py",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/main.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/main.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/output.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/output.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/provider.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/provider.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/variables.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/Shared_Resources/variables.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/User_Input.auto.tfvars": "_stable/scripts/Terraform/FortiAIGate_Terraform/User_Input.auto.tfvars",
+    "scripts/Terraform/FortiAIGate_Terraform/main.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/main.tf",
+    "scripts/Terraform/FortiAIGate_Terraform/variables.tf": "_stable/scripts/Terraform/FortiAIGate_Terraform/variables.tf",
+    "scripts/Terraform/README.txt": "_stable/scripts/Terraform/README.txt",
+    "scripts/Terraform/SHA256SUMS": "_stable/scripts/Terraform/SHA256SUMS",
+    "scripts/Terraform/main.tf": "_stable/scripts/Terraform/main.tf"
+  },
+  "tag": "terraform-2026-11-02.8",
+  "version": "2026-11-02.8"
+}
