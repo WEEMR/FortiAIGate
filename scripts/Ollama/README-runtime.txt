@@ -1,4 +1,4 @@
-Ollama lab runtime — 2026-11-02.1
+Ollama lab runtime — 2026-11-02.2
 
 Run on a NEW, SEPARATE Ubuntu 22.04/24.04 amd64 host, with at least 4 GiB RAM
 (8 GiB recommended), 16 GiB free disk and outbound internet access. The small
@@ -6,10 +6,10 @@ model runs on the CPU and works behind either CPU or GPU FortiAIGate editions.
 This installer does not change the FortiAIGate host or enable gateway scanning.
 
 Install from the extracted package (the AWS launcher invokes this automatically):
-  sudo bash releases/2026-11-02.1/prepare_ollama.sh --install --bind-address YOUR_PRIVATE_IPV4 --webui-url http://YOUR_SERVER_PUBLIC_IPV4:3000
+  sudo bash releases/2026-11-02.2/prepare_ollama.sh --install --bind-address YOUR_PRIVATE_IPV4 --webui-url http://YOUR_SERVER_PUBLIC_IPV4:3000
 
-Runtime 2026-11-02.1 is published at the immutable GitHub URL:
-https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.1/scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh
+Runtime 2026-11-02.2 is published at the immutable GitHub URL:
+https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.2/scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh
 The package's top-level prepare_ollama.sh intentionally retains runtime .2 for
 older launchers that pin that download's checksum. Use the current versioned file
 for automatic Configure, progress and certificate handling, and verify the
@@ -125,9 +125,9 @@ browser-url file, preserves accounts/chats, then starts explicit manual setup:
     ollama_installer=$(mktemp /tmp/ollama-runtime.XXXXXX)
     trap 'rm -f "$ollama_installer"' EXIT
     curl -fsSL --proto '=https' --proto-redir '=https' --retry 3 \
-      https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.1/scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh \
+      https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.2/scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh \
       -o "$ollama_installer"
-    printf '%s  %s\n' '3623fafd5bb1822fb096008fc2f4a5a04c2521f10506e9ee4c2610366a42ab19' "$ollama_installer" | sha256sum -c -
+    printf '%s  %s\n' 'aeea4dc3c37ec9c32ea7641afade3c92ff0a2b9b3eac70692409d9974e0db0ae' "$ollama_installer" | sha256sum -c -
     sudo bash "$ollama_installer" --install \
       --bind-address OLLAMA_PRIVATE_IPV4 \
       --webui-url http://OLLAMA_PUBLIC_IPV4:3000

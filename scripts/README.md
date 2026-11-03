@@ -10,7 +10,7 @@ Public deployment entry points and their retained runtime snapshots. Select your
 | [Azure H100 GPU](Azure/GPU/README.md) | Azure H100 GPU deployment and access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Azure RTX GPU](Azure/RTX/README.md) | Azure RTX GPU deployment with restart and extension controls. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Home / Ubuntu](Home/README.md) | Shared Ubuntu preparation and interactive installation helpers. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
-| [Ollama model host](Ollama/README.md) | A separate Ollama/Open WebUI server linked to a FortiAIGate lab. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/ollama.html) |
+| [Ollama model host](Ollama/README.md) | A separate Ollama/Open WebUI server linked to a FortiAIGate lab. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/ollama.html) |
 | [Terraform](Terraform/README.md) | Downloadable AWS/Azure Terraform configuration and provider lockfile. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 
 [AWS families](AWS/README.md) · [Azure families](Azure/README.md) · [Public download overview](../README.md)

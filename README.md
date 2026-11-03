@@ -14,7 +14,7 @@ Legacy S3 scripts/ and user_data/ download URLs were retired on 2026-11-02. Use 
 | [Azure H100 GPU](scripts/Azure/GPU/README.md) | Azure H100 GPU deployment and access management. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Azure RTX GPU](scripts/Azure/RTX/README.md) | Azure RTX GPU deployment with restart and extension controls. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/gpu.html) |
 | [Home / Ubuntu](scripts/Home/README.md) | Shared Ubuntu preparation and interactive installation helpers. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
-| [Ollama model host](scripts/Ollama/README.md) | A separate Ollama/Open WebUI server linked to a FortiAIGate lab. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/ollama.html) |
+| [Ollama model host](scripts/Ollama/README.md) | A separate Ollama/Open WebUI server linked to a FortiAIGate lab. | 2026-11-02.2 | [Deployment guide](https://guides.fortinetpslab.com/ollama.html) |
 | [Terraform](scripts/Terraform/README.md) | Downloadable AWS/Azure Terraform configuration and provider lockfile. | 2026-11-02.1 | [Deployment guide](https://guides.fortinetpslab.com/cpu.html) |
 
 Browse [all script folders](scripts/README.md), [AWS](scripts/AWS/README.md) or [Azure](scripts/Azure/README.md). Each family catalog describes its current downloads and every retained file/folder without modifying the release snapshots.

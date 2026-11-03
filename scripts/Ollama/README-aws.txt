@@ -1,8 +1,23 @@
-Ollama + llama-lab behind FortiAIGate — AWS launcher 2026-11-02.1
+Ollama + llama-lab behind FortiAIGate — AWS launcher 2026-11-02.2
 
 Run ollama_aws_launcher.sh in AWS CloudShell, in the same account as your existing
 FortiAIGate CPU or GPU EC2 instance. The region is fixed to US East (N. Virginia),
 us-east-1, matching the parent CPU/GPU lab launchers and their linked cleanup.
+
+Release 2026-11-02.2 stops readiness retries for permission, expired-credential
+and unknown AWS errors. A readiness command that AWS has accepted is polled by
+the same command ID until it completes; a read timeout does not submit another
+command. SendCommand uses one CLI/SDK attempt because it has no idempotency
+token; ambiguous failures stop for inspection. Read-operation retries remain
+enabled. Invalid readiness data stops with a diagnostic instead of being retried.
+Initial SSM node
+registration and explicit throttling still have bounded waits. InvalidInstanceId
+can also indicate access or node-state problems, so inspect those if the wait ends.
+Optional CloudFormation resource detail stops retrying permanent errors while
+the main stack-status check continues. Deployment, cleanup, ownership checks and
+the 15/30-minute deadlines are unchanged. No direct IAM API probes were added.
+The host installer has only a matching release-version update; its behavior is
+unchanged. Existing hosts do not need a runtime update for these launcher fixes.
 
 The launcher asks for a separate Ollama lab prefix, then lists existing running or
 stopped FortiAIGate CPU/GPU deployments in this account and region as numbered
@@ -43,8 +58,8 @@ The flag is available only for Create, and does not update an existing stack.
 The approved launcher is published at:
 https://raw.githubusercontent.com/WEEMR/FortiAIGate/approved/scripts/Ollama/ollama_aws_launcher.sh
 It verifies the approved manifest and downloads the full menu from its immutable
-Ollama GitHub tag. The 2026-11-02.1 menu downloads the matching runtime from:
-https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.1/scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh
+Ollama GitHub tag. The 2026-11-02.2 menu downloads the matching runtime from:
+https://raw.githubusercontent.com/WEEMR/FortiAIGate/ollama-2026-11-02.2/scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh
 and verifies its SHA256. The older stable prepare_ollama.sh URL retains .2
 so saved .8 and earlier launchers can still verify their pinned installer.
 Only t3a.large and t3.large are accepted, and --instance-type is available only for

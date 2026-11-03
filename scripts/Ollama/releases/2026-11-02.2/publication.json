@@ -1,0 +1,134 @@
+{
+  "files": {
+    "Ollama_AWS_Lab_Scripts.zip": {
+      "sha256": "8c990c60bbf6f30223dd6c09949466cf3af7b17b4a8270e030caf3a5513fc1ef",
+      "size": 120021
+    },
+    "README-aws.txt": {
+      "sha256": "a1e08878f6fa4acee585e76a8f5474ed204dee6f5b7e14879542a07639e3ac05",
+      "size": 23639
+    },
+    "README-runtime.txt": {
+      "sha256": "bfbe562c45a863e46c0a61c56706e6e3233cf7b480c34523b6509124df9d1ba5",
+      "size": 12325
+    },
+    "SHA256SUMS": {
+      "sha256": "96fcffefe6493dd14042ac6308eeac61430f532440aded6624d47c8af8966014",
+      "size": 1334
+    },
+    "_stable/scripts/Ollama/Ollama_AWS_Lab_Scripts.zip": {
+      "sha256": "8c990c60bbf6f30223dd6c09949466cf3af7b17b4a8270e030caf3a5513fc1ef",
+      "size": 120021
+    },
+    "_stable/scripts/Ollama/README-aws.txt": {
+      "sha256": "a1e08878f6fa4acee585e76a8f5474ed204dee6f5b7e14879542a07639e3ac05",
+      "size": 23639
+    },
+    "_stable/scripts/Ollama/README-runtime.txt": {
+      "sha256": "bfbe562c45a863e46c0a61c56706e6e3233cf7b480c34523b6509124df9d1ba5",
+      "size": 12325
+    },
+    "_stable/scripts/Ollama/SHA256SUMS": {
+      "sha256": "87cb94e44b1becd45921aab2fb21a0bc45ab21088240a45bf6006ffadbc0082f",
+      "size": 1068
+    },
+    "_stable/scripts/Ollama/ollama_aws_launcher.sh": {
+      "sha256": "780e740fcb5e958fd82d9acfe6edcb9e8e6d9ff428f6473475e448087a530651",
+      "size": 2767
+    },
+    "_stable/scripts/Ollama/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "_stable/scripts/Ollama/releases/2026-11-01.2/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "_stable/scripts/Ollama/releases/2026-11-01.3/prepare_ollama.sh": {
+      "sha256": "fc8c731e50f6a16e79fc0eef5a2b53676e0de41bac0c1208e3e8f8714ed514ea",
+      "size": 28876
+    },
+    "_stable/scripts/Ollama/releases/2026-11-01.4/prepare_ollama.sh": {
+      "sha256": "01c72510749c25e7a93c819fc4c2e9f9399e3ade37088ab215e02bce9973863f",
+      "size": 35053
+    },
+    "_stable/scripts/Ollama/releases/2026-11-01.5/prepare_ollama.sh": {
+      "sha256": "d1ef41787c3bee10c8823bd0b198dbef7c113cdee1bac70b8546efc597607f71",
+      "size": 37255
+    },
+    "_stable/scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh": {
+      "sha256": "3623fafd5bb1822fb096008fc2f4a5a04c2521f10506e9ee4c2610366a42ab19",
+      "size": 41284
+    },
+    "_stable/scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh": {
+      "sha256": "aeea4dc3c37ec9c32ea7641afade3c92ff0a2b9b3eac70692409d9974e0db0ae",
+      "size": 41284
+    },
+    "compatibility/SHA256SUMS": {
+      "sha256": "87cb94e44b1becd45921aab2fb21a0bc45ab21088240a45bf6006ffadbc0082f",
+      "size": 1068
+    },
+    "legacy/SHA256SUMS": {
+      "sha256": "5eb41e5c555b29227b86693ef408b7d050d3e9d52444146244428dffa623d4cf",
+      "size": 975
+    },
+    "legacy/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "manifest.json": {
+      "sha256": "d9a08e116dd23020252f88698343e6498ada3555d75e020e9fae6edeb4b438ac",
+      "size": 2314
+    },
+    "ollama_aws_launcher.sh": {
+      "sha256": "f9a4e4ad1d52d802a816a64466c9e063c85e881ee42a316aae432923087cca0a",
+      "size": 100640
+    },
+    "prepare_ollama.sh": {
+      "sha256": "aeea4dc3c37ec9c32ea7641afade3c92ff0a2b9b3eac70692409d9974e0db0ae",
+      "size": 41284
+    },
+    "releases/2026-11-01.2/prepare_ollama.sh": {
+      "sha256": "1b4d474474e033effc793e5095535c05edbb69df8072a3ae2027535570a885d8",
+      "size": 27132
+    },
+    "releases/2026-11-01.3/prepare_ollama.sh": {
+      "sha256": "fc8c731e50f6a16e79fc0eef5a2b53676e0de41bac0c1208e3e8f8714ed514ea",
+      "size": 28876
+    },
+    "releases/2026-11-01.4/prepare_ollama.sh": {
+      "sha256": "01c72510749c25e7a93c819fc4c2e9f9399e3ade37088ab215e02bce9973863f",
+      "size": 35053
+    },
+    "releases/2026-11-01.5/prepare_ollama.sh": {
+      "sha256": "d1ef41787c3bee10c8823bd0b198dbef7c113cdee1bac70b8546efc597607f71",
+      "size": 37255
+    },
+    "releases/2026-11-02.1/prepare_ollama.sh": {
+      "sha256": "3623fafd5bb1822fb096008fc2f4a5a04c2521f10506e9ee4c2610366a42ab19",
+      "size": 41284
+    },
+    "releases/2026-11-02.2/prepare_ollama.sh": {
+      "sha256": "aeea4dc3c37ec9c32ea7641afade3c92ff0a2b9b3eac70692409d9974e0db0ae",
+      "size": 41284
+    }
+  },
+  "repository": "WEEMR/FortiAIGate",
+  "schema_version": 1,
+  "stable_files": {
+    "scripts/Ollama/Ollama_AWS_Lab_Scripts.zip": "_stable/scripts/Ollama/Ollama_AWS_Lab_Scripts.zip",
+    "scripts/Ollama/README-aws.txt": "_stable/scripts/Ollama/README-aws.txt",
+    "scripts/Ollama/README-runtime.txt": "_stable/scripts/Ollama/README-runtime.txt",
+    "scripts/Ollama/SHA256SUMS": "_stable/scripts/Ollama/SHA256SUMS",
+    "scripts/Ollama/ollama_aws_launcher.sh": "_stable/scripts/Ollama/ollama_aws_launcher.sh",
+    "scripts/Ollama/prepare_ollama.sh": "_stable/scripts/Ollama/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-01.2/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-01.2/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-01.3/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-01.3/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-01.4/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-01.4/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-01.5/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-01.5/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-02.1/prepare_ollama.sh",
+    "scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh": "_stable/scripts/Ollama/releases/2026-11-02.2/prepare_ollama.sh"
+  },
+  "tag": "ollama-2026-11-02.2",
+  "version": "2026-11-02.2"
+}
