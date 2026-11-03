@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+# Execute the same immutable host preparation used by the CloudShell launchers.
+set -Eeuo pipefail
+umask 077
+install -d -m 0755 /var/lib/fortiaigate-prep
+exec > >(tee -a /var/log/fortiaigate-bootstrap.log) 2>&1
+failure() {
+  result=$?
+  trap - ERR
+  printf 'First-boot preparation loader failed (exit %s). See /var/log/fortiaigate-bootstrap.log.\n' "$result" > /var/lib/fortiaigate-prep/FAILED
+  chmod 0644 /var/lib/fortiaigate-prep/FAILED
+  exit "$result"
+}
+trap failure ERR
+printf '%s' '${base64encode(prep_config_json)}' | base64 --decode > /etc/fortiaigate-prep.json
+chmod 0600 /etc/fortiaigate-prep.json
+id '${operator}'
+if [[ '${cloud}' == aws ]]; then
+  # EIP association can finish after EC2 starts. Wait before internet downloads.
+  python3 - <<'PUBLIC_IP_WAIT'
+import ipaddress, time, urllib.request
+opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+deadline = time.monotonic() + 600
+while time.monotonic() < deadline:
+    try:
+        request = urllib.request.Request('http://169.254.169.254/latest/api/token', method='PUT',
+            headers={'X-aws-ec2-metadata-token-ttl-seconds': '1200'})
+        with opener.open(request, timeout=3) as response:
+            token = response.read().decode().strip()
+        request = urllib.request.Request('http://169.254.169.254/latest/meta-data/public-ipv4',
+            headers={'X-aws-ec2-metadata-token': token})
+        with opener.open(request, timeout=3) as response:
+            address = ipaddress.ip_address(response.read().decode().strip())
+        if address.version == 4 and address.is_global:
+            print('PASS: public IPv4 association confirmed before preparation.', flush=True)
+            break
+    except (OSError, ValueError):
+        pass
+    print('Waiting for the allocated public IPv4 association...', flush=True)
+    time.sleep(10)
+else:
+    raise SystemExit('Public IPv4 association was not confirmed within 10 minutes.')
+PUBLIC_IP_WAIT
+fi
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=l
+if ! command -v curl >/dev/null 2>&1; then
+  apt-get -o DPkg::Lock::Timeout=300 -o Acquire::Retries=3 update
+  apt-get -o DPkg::Lock::Timeout=300 -o Acquire::Retries=3 install -y ca-certificates curl
+fi
+download=$(mktemp /tmp/fortiaigate-prep.XXXXXXXX.sh)
+curl --fail --location --show-error --retry 3 --proto '=https' --proto-redir '=https' --tlsv1.2 \
+  --connect-timeout 15 --max-time 300 '${preparation_url}' --output "$download"
+printf '%s  %s\n' '${preparation_sha256}' "$download" | sha256sum --check
+bash -n "$download"
+install -m 0755 "$download" '/usr/local/sbin/prepare_fortiaigate_${edition}.sh'
+rm -f "$download"
+printf 'Preparation script: immutable public download and SHA-256 verified.\n'
+bash '/usr/local/sbin/prepare_fortiaigate_${edition}.sh'
+# GPU preparation deliberately reboots and resumes through its own systemd unit.
+# Readiness is determined by READY/GPU_READY, never cloud-init exit status alone.
