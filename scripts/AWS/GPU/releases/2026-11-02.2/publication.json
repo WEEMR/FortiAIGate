@@ -1,0 +1,55 @@
+{
+  "files": {
+    "FortiAIGate_AWS_GPU_Lab_Scripts.zip": {
+      "sha256": "3d4ed09d57a1a8715fa9f94dab3a76f81efb9d6bcd6420e38e3f42e0d5b522f0",
+      "size": 285666
+    },
+    "README.txt": {
+      "sha256": "8dd66f8be5b9f3f705480b0a7ce56964da1abf3a95ade3b289c5cc5bf046e555",
+      "size": 18095
+    },
+    "SHA256SUMS": {
+      "sha256": "ee0f1f05d65d43a3d84775604d016223de4be0b9982ee3a2ac9b079b6e4d7786",
+      "size": 770
+    },
+    "_stable/scripts/AWS/GPU/FortiAIGate_GPU_AWS_Launcher.sh": {
+      "sha256": "e6244598ca8802d91aa26102eca4d857dbc2e061578924049ca7425b861dbecd",
+      "size": 8912
+    },
+    "create_fortiaigate_gpu_aws.sh": {
+      "sha256": "c8c2b345d89c8c9bd047a4226025d97d80392a28935fd2c7e3153ea9ec5a974b",
+      "size": 196940
+    },
+    "destroy_fortiaigate_gpu_aws.sh": {
+      "sha256": "08d3dd6ed380415f7bd47ec326edd8f5a1e423caf08652959ac3a448994bd6bc",
+      "size": 19366
+    },
+    "fortiaigate_gpu_aws_launcher.sh": {
+      "sha256": "4172739045dd3dc9d1325fb70f0fb9f659ceb1336146996de51137785c263517",
+      "size": 8953
+    },
+    "manifest.json": {
+      "sha256": "e8146535d132e054e5b9dc1165ba2ee3ad4942fb731a58bb8b816331eb106f63",
+      "size": 1422
+    },
+    "required-fortinet-files.txt": {
+      "sha256": "f8a878ed838a791ded3185c96d48f1f72dd903c7277d3575266212d6b136cde0",
+      "size": 873
+    },
+    "user_data/prepare_fortiaigate_cpu.sh": {
+      "sha256": "db1cf5ca6d2a0519a2b633e6c3fd9991325d288bd064367891506d64c843ffb6",
+      "size": 13989
+    },
+    "user_data/prepare_fortiaigate_gpu.sh": {
+      "sha256": "4693ad458f687889ff074c1436f7e121ddc53d03ec0a695d672d0046325eb320",
+      "size": 26498
+    }
+  },
+  "repository": "WEEMR/FortiAIGate",
+  "schema_version": 1,
+  "stable_files": {
+    "scripts/AWS/GPU/FortiAIGate_GPU_AWS_Launcher.sh": "_stable/scripts/AWS/GPU/FortiAIGate_GPU_AWS_Launcher.sh"
+  },
+  "tag": "gpu-2026-11-02.2",
+  "version": "2026-11-02.2"
+}

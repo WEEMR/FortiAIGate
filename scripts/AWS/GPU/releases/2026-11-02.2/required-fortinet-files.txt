@@ -1,0 +1,20 @@
+FortiAIGate 8.0.2 build0055 · Docker GPU download checklist
+
+Images/ (the importer accepts .tar.gz variants too):
+FAIG_api-V8.0.2-build0055-FORTINET.tar
+FAIG_webui-V8.0.2-build0055-FORTINET.tar
+FAIG_llm-gateway-V8.0.2-build0055-FORTINET.tar
+FAIG_logd-V8.0.2-build0055-FORTINET.tar
+FAIG_license_manager-V8.0.2-build0055-FORTINET.tar
+FAIG_guardrail-V8.0.2-build0055-FORTINET.tar
+FAIG_guardrail-scanner-V8.0.2-build0055-FORTINET.tar
+FAIG_custom-triton-V8.0.2-build0055-FORTINET.tar
+FAIG_faig-models-V8.0.2-build0055-FORTINET.tar
+FAIG_vllm-server-V8.0.2-build0055-FORTINET.tar
+
+Installer/:
+FAIG_deploy-docker-compose-cli-V8.0.2-build0055-FORTINET.tar.gz
+
+Use one variant per image. Compare vendor checksums when provided.
+These are verified importer filenames; portal packaging may provide a bundle.
+Keep release files and licenses private. Do not substitute upstream images.
