@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+# Ollama runs on its own CPU host; inference traffic reaches it from FortiAIGate.
+set -Eeuo pipefail
+set +x
+umask 077
+install -d -m 0700 /var/lib/ollama-lab
+exec > >(tee -a /var/log/ollama-lab-bootstrap.log) 2>&1
+failure() {
+  result=$?
+  trap - ERR
+  printf '%s\n' '{"state":"failed","stage":"bootstrap","percent":0,"message":"Ubuntu bootstrap failed; inspect /var/log/ollama-lab-bootstrap.log"}' > /var/lib/ollama-lab/status.json
+  chmod 0600 /var/lib/ollama-lab/status.json
+  exit "$result"
+}
+trap failure ERR
+id '${operator}'
+printf 'OLLAMA_BOOTSTRAP: preparing a separate Ubuntu model host\n'
+if [[ '${cloud}' == azure ]]; then
+  # Azure's Standard public IP is not reliably populated in the IMDS leaf.
+  # The Azure module substitutes its owned static PIP after cloud-init rendering.
+  public_ip='__FORTIAIGATE_OLLAMA_PUBLIC_IP__'
+  python3 - "$public_ip" <<'PUBLIC_IP_VALIDATE'
+import ipaddress, sys
+address = ipaddress.ip_address(sys.argv[1])
+if address.version != 4 or not address.is_global:
+    raise SystemExit('The allocated Azure public IP is not a public IPv4 address.')
+PUBLIC_IP_VALIDATE
+else
+public_ip=$(python3 - <<'PUBLIC_IP_WAIT'
+import ipaddress, sys, time, urllib.request
+opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+deadline = time.monotonic() + 600
+while time.monotonic() < deadline:
+    try:
+        request = urllib.request.Request('http://169.254.169.254/latest/api/token', method='PUT',
+            headers={'X-aws-ec2-metadata-token-ttl-seconds': '1200'})
+        with opener.open(request, timeout=3) as response:
+            token = response.read().decode().strip()
+        request = urllib.request.Request('http://169.254.169.254/latest/meta-data/public-ipv4',
+            headers={'X-aws-ec2-metadata-token': token})
+        with opener.open(request, timeout=3) as response:
+            address = ipaddress.ip_address(response.read().decode().strip())
+        if address.version == 4 and address.is_global:
+            print(address)
+            break
+    except (OSError, ValueError):
+        pass
+    print('OLLAMA_BOOTSTRAP: waiting for public IPv4 association...', file=sys.stderr, flush=True)
+    time.sleep(10)
+else:
+    raise SystemExit('Public IPv4 association was not confirmed within 10 minutes.')
+PUBLIC_IP_WAIT
+)
+fi
+printf '%s\n' '${base64encode(jsonencode({schema_version=1, api_port=gateway_api_port, gateway_private_ip=gateway_private_ip}))}' | base64 --decode > /var/lib/ollama-lab/gateway-access.json
+chmod 0600 /var/lib/ollama-lab/gateway-access.json
+export DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=l
+apt-get -o DPkg::Lock::Timeout=300 -o Acquire::Retries=3 update
+apt-get -o DPkg::Lock::Timeout=300 -o Acquire::Retries=3 install -y ca-certificates curl
+install -d -m 0755 /opt/ollama-lab-bootstrap
+curl --fail --location --show-error --retry 3 --proto '=https' --proto-redir '=https' --tlsv1.2 \
+  --connect-timeout 15 --max-time 300 '${preparation_url}' --output /opt/ollama-lab-bootstrap/prepare_ollama.sh
+printf '%s  %s\n' '${preparation_sha256}' /opt/ollama-lab-bootstrap/prepare_ollama.sh | sha256sum --check
+bash -n /opt/ollama-lab-bootstrap/prepare_ollama.sh
+bash /opt/ollama-lab-bootstrap/prepare_ollama.sh --install --bind-address '${private_ip}' --webui-url "http://$public_ip:3000"
+printf 'OLLAMA_BOOTSTRAP_COMPLETE: configure FortiAIGate provider and virtual key, then run sudo ollama-lab configure --manual\n'
